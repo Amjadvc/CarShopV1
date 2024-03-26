@@ -1,0 +1,24 @@
+.sliderContainer {
+  position: relative;
+}
+
+.sliderBg {
+  background: #dfdede;
+  box-shadow: -2px 4px 4.5px rgba(0, 0, 0, 0.25);
+  border-radius: 23px;
+  width: calc(100% - 30px);
+  height: 114px;
+  position: absolute;
+  top: 78px;
+}
+@media (max-width: 1200px) {
+  .sliderBg {
+    top: 48px;
+  }
+}
+
+@media (max-width: 480px) {
+  .sliderBg {
+    display: none;
+  }
+}

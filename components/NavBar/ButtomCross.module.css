@@ -1,0 +1,46 @@
+.button {
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.cross {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.crossLine {
+  position: absolute;
+  width: 44px;
+  height: 4px;
+  transform-origin: center;
+  background: #c6c6c6;
+}
+
+.crossLine.one {
+  transform: rotate(45deg);
+}
+.crossLine.two {
+  transform: rotate(-45deg);
+}
+
+.crossLine::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+  width: 0%;
+  height: 100%;
+  background-color: #4c4c4c;
+  transition: 0.3s;
+}
+
+.button:hover .crossLine::before {
+  width: 100%;
+}

@@ -1,0 +1,11 @@
+.buttonContainer {
+  justify-content: end;
+  align-items: center;
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .buttonContainer {
+    display: flex;
+  }
+}

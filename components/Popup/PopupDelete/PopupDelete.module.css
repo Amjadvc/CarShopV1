@@ -1,0 +1,123 @@
+.deletePopup {
+  display: flex;
+  background: #595c5cf2;
+  width: 500px;
+  height: 284px;
+  font-weight: bold;
+  border-radius: 10px;
+  padding: 20px;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  color: white;
+  transform: translate(-50%, -50%);
+  gap: 10px;
+  text-align: center;
+  line-height: 1.6;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: 0px 0px 3px 1px #e6dcdf, 0px 0px 6px 1px #4c504c;
+  flex-direction: column;
+  word-spacing: 3px;
+}
+@media (min-width: 480px) and (max-width: 769px) {
+  .deletePopup {
+    width: 440px;
+    height: 267px;
+  }
+}
+@media (max-width: 480px) {
+  .deletePopup {
+    width: 260px;
+    height: 314px;
+    justify-content: center;
+    gap: 38px;
+  }
+}
+.close {
+  position: absolute;
+  top: 0px;
+  right: -0.3px;
+  width: 40px;
+  height: 35px;
+  background-color: var(--color-primary-1);
+  border-radius: 2px;
+  border-top-right-radius: 10px;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  color: white;
+  box-shadow: inset 0px 0px 4px 1px #bab0b0;
+  font-family: sans-serif;
+  font-size: 19px;
+  transition: 0.3s;
+}
+
+.close:hover {
+  transform: scale(1.1);
+}
+
+.headerText {
+  font-size: 25px;
+  font-family: Roboto;
+}
+@media (max-width: 480px) {
+  .headerText {
+    font-size: 23px;
+  }
+}
+/* .headerText span {
+  margin: 0 4px;
+} */
+.headerText strong {
+  width: 40px;
+  height: 40px;
+  display: inline-flex;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  font-size: 21px;
+}
+@media (max-width: 480px) {
+  .headerText strong {
+    font-size: 18px;
+    width: 33px;
+    height: 33px;
+  }
+}
+
+.btns {
+  display: flex;
+  gap: 35px;
+}
+
+.btns button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 45px;
+  border: none;
+  border-radius: 2px;
+  box-shadow: 0px 4px 5px 0px #3d3437;
+  cursor: pointer;
+  letter-spacing: 0.5px;
+  color: white;
+  transition: 0.2s;
+  background-color: var(--color-primary-1);
+  font-size: 18px;
+}
+@media (max-width: 480px) {
+  .btns button {
+    width: 82px;
+    height: 37px;
+    font-size: 17px;
+  }
+}
+
+.btns button:hover {
+  transform: scale(1.1);
+  box-shadow: none;
+}

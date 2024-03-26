@@ -1,0 +1,9 @@
+.iconSvg {
+  transition: 0.3s;
+  cursor: pointer;
+  width: 22px;
+}
+
+.iconSvg:hover .iconSvgPath {
+  fill: var(--color-primary-1);
+}

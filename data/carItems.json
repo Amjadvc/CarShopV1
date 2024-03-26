@@ -1,0 +1,90 @@
+[
+  {
+    "id": 1,
+    "quantity": 1,
+    "carName": "AUDI",
+    "seator": 6,
+    "transmission": "Manual",
+    "speed": 7,
+    "price": 800,
+    "rating": 4.9,
+    "description": "The culmimination of comfort,luxury,and powerrul living is embodied in the First-Ever BMWX7 -the biggest BMW ever built.",
+    "colors": ["blue", "white", "black"],
+    "choosenColor": "blue",
+    "mainImge": "/images/car-list-one.png",
+    "slderImge": [
+      "/images/porche.png",
+      "/images/details-Door.png",
+      "/images/details-motor.png",
+      "/images/details-Streeing.png"
+    ],
+    "code": "#816537",
+    "engineCopacity": 12000
+  },
+  {
+    "id": 2,
+    "quantity": 1,
+    "carName": "Honda",
+    "seator": 2,
+    "transmission": "Manual",
+    "speed": 4,
+    "price": 300,
+    "rating": 3.5,
+    "description": "The culmimination of comfort,luxury,and powerrul living is embodied in the First-Ever BMWX7 -the biggest BMW ever built.",
+    "colors": ["red", "white", "black"],
+    "choosenColor": "red",
+    "mainImge": "/images/car-list-two.png",
+    "slderImge": [
+      "/images/honda.png",
+      "/images/details-Door.png",
+      "/images/details-motor.png",
+      "/images/details-Streeing.png"
+    ],
+    "code": "#816537",
+    "engineCopacity": 7000
+  },
+  {
+    "id": 3,
+    "quantity": 1,
+    "carName": "VOLVO",
+    "seator": 3,
+    "transmission": "Manual",
+    "speed": 5,
+    "price": 100,
+    "rating": 2.3,
+    "description": "The culmimination of comfort,luxury,and powerrul living is embodied in the First-Ever BMWX7 -the biggest BMW ever built.",
+    "colors": ["gray", "white", "black"],
+    "choosenColor": "gray",
+    "mainImge": "/images/car-list-three.png",
+    "slderImge": [
+      "/images/volvo.png",
+      "/images/details-Door.png",
+      "/images/details-motor.png",
+      "/images/details-Streeing.png"
+    ],
+    "code": "#816537",
+    "engineCopacity": 9000
+  },
+  {
+    "id": 4,
+    "quantity": 1,
+    "carName": "BMW",
+    "seator": 4,
+    "transmission": "Manual",
+    "speed": 5,
+    "price": 200,
+    "rating": 1,
+    "description": "The culmimination of comfort,luxury,and powerrul living is embodied in the First-Ever BMWX7 -the biggest BMW ever built.",
+    "colors": ["green", "white", "black"],
+    "choosenColor": "green",
+    "mainImge": "/images/car-list-four.png",
+    "slderImge": [
+      "/images/bmw.png",
+      "/images/details-Door.png",
+      "/images/details-motor.png",
+      "/images/details-Streeing.png"
+    ],
+    "code": "#816537",
+    "engineCopacity": 8000
+  }
+]

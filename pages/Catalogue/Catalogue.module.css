@@ -1,0 +1,12 @@
+.bgColor {
+  background-color: var(--color-primary-2);
+}
+.theamBgColor {
+  color: #e7d6d6 !important;
+}
+
+@media (max-width: 769px) {
+  .theamBgColor {
+    color: #000 !important;
+  }
+}

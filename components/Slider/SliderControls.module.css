@@ -1,0 +1,90 @@
+.arrowsContainer {
+  position: absolute;
+  width: 100%;
+  top: 67px;
+}
+@media (max-width: 1200px) {
+  .arrowsContainer {
+    top: 50px;
+  }
+}
+@media (max-width: 480px) {
+  .arrowsContainer {
+    top: 67px;
+  }
+}
+@media (max-width: 360px) {
+  .arrowsContainer {
+    top: 50px;
+  }
+}
+
+.arrow {
+  outline: none;
+  border: none;
+  cursor: pointer;
+  background-color: var(--color-primary-1);
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+}
+
+.arrow:hover {
+  background-color: var(--color-primary-2);
+  transition: 0.3s;
+}
+.themArrow:hover {
+  background-color: var(--color-secodery-3);
+}
+
+.arrow:hover :global(.inner) {
+  fill: #969696;
+  transition: 0.4s;
+}
+
+@media (max-width: 1200px) {
+  .arrow {
+    height: 35px;
+    width: 35px;
+  }
+}
+
+@media (max-width: 480px) {
+  .arrow {
+    height: 33px;
+    width: 33px;
+  }
+}
+@media (max-width: 360px) {
+  .arrow {
+    height: 27px;
+    width: 27px;
+  }
+}
+
+.left {
+  left: 13px;
+}
+.right {
+  right: 13px;
+}
+@media (max-width: 1200px) {
+  .left {
+    left: 5px;
+  }
+  .right {
+    right: 5px;
+  }
+}
+@media (max-width: 480px) {
+  .left {
+    left: 15px;
+  }
+  .right {
+    right: 15px;
+  }
+}

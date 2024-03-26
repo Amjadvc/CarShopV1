@@ -1,0 +1,100 @@
+.carItem {
+  width: 220px;
+  position: relative;
+  cursor: pointer;
+  border-radius: 18px;
+  overflow: hidden;
+}
+
+.carItem::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #b0abab5c;
+}
+
+@media (max-width: 1200px) {
+  .carItem {
+    width: 190px;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 769px) {
+  .carItem {
+    width: 150px;
+  }
+}
+
+@media (max-width: 480px) {
+  .carItem {
+    width: 260px;
+  }
+}
+
+@media (max-width: 360px) {
+  .carItem {
+    width: 200px;
+  }
+}
+@media (max-width: 320px) {
+  .carItem {
+    width: 180px;
+  }
+}
+
+.carItemOverlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 0%;
+  border-radius: 12px;
+  background-color: #976e728c;
+}
+.activeOverlay {
+  animation: overlays 0.2s ease-in-out forwards;
+}
+
+@keyframes overlays {
+  to {
+    height: 100%;
+  }
+}
+.carItemInner {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 30px;
+  font-weight: bold;
+  opacity: 0;
+  color: var(--color-primary-2);
+  font-family: sans-serif;
+}
+.themCarItemInner {
+  color: var(--color-secodery-1);
+}
+
+.activeSpan {
+  animation: activeSpan 0.3s ease-in-out forwards 0.15s;
+}
+@keyframes activeSpan {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.carItem > img {
+  width: 100%;
+  height: 100%;
+}
+.themImge {
+  filter: invert(100%);
+  opacity: 0.7;
+}

@@ -1,0 +1,131 @@
+.productContainer {
+  display: flex;
+  align-items: center;
+  column-gap: 19px;
+}
+
+.imgeTabel {
+  width: 90px;
+}
+
+@media (max-width: 769px) {
+  .imgeTabel {
+    width: 66px;
+  }
+}
+
+.itemTr td {
+  font-family: Righteous;
+  font-size: 14px;
+  font-weight: 400;
+  color: #00000080;
+  padding: 30px 10px;
+  text-align: center;
+}
+
+@media (max-width: 769px) {
+  .itemTr td {
+    font-size: 12px;
+  }
+}
+
+.productDetails {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  text-align: start;
+  row-gap: 6px;
+}
+
+.carType {
+  color: #000000bf;
+  font-size: 18px;
+}
+
+@media (max-width: 769px) {
+  .carType {
+    font-size: 15px;
+  }
+}
+
+.btn {
+  all: unset;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.btn:hover {
+  transform: scale(1.5);
+}
+
+@media (min-width: 769px) {
+  .itemTr:nth-child(odd) {
+    background-image: linear-gradient(45deg, #e3d0d254, transparent);
+    background-color: #d047550a;
+  }
+}
+
+@media (max-width: 769px) {
+  .productContainer {
+    flex-direction: row-reverse;
+    justify-content: end;
+    column-gap: 10px;
+  }
+  .productDetails {
+    direction: rtl;
+  }
+
+  .itemTr,
+  .tabel td {
+    display: block;
+    width: 100%;
+  }
+
+  .itemTr {
+    margin-bottom: 35px;
+    background: #ffffff;
+    padding: 12px 18px;
+    border-radius: 10px;
+    box-shadow: inset 0px 0px 2px 0px #323030, inset 0px 0px 4px 3px #cb878e;
+  }
+
+  .itemTr td {
+    text-align: right;
+    padding: 27px 10px;
+    font-size: 13px;
+    padding-left: 50%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+  }
+  .itemTr td:not(:last-child) {
+    border-bottom: 3px solid #efecec;
+  }
+  .itemTr td::before {
+    content: attr(datalabel);
+    position: absolute;
+    left: 0;
+    width: 50%;
+    font-family: Righteous;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: left;
+    color: #000000bf;
+  }
+  .carType {
+    font-size: 17px;
+  }
+
+  .imgeTabel {
+    width: 75px;
+  }
+}
+
+@media (max-width: 360px) {
+  .productContainer {
+    row-gap: 10px;
+    align-items: end;
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,131 @@
+.cookiesBanner {
+  width: 100%;
+  padding: 100px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  z-index: 100;
+  bottom: 0;
+  background: #f4dfdf;
+  border-top: 4px solid #976e72;
+  /* gap: 70px; */
+}
+.hide {
+  display: none;
+}
+
+@media (max-width: 480px) {
+  .cookiesBanner {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    padding: 30px 0px;
+    row-gap: 40px;
+  }
+}
+.cookiesContent {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  row-gap: 17px;
+}
+.cookiesContent h3 {
+  font-size: 40px;
+  font-family: sans-serif;
+  color: #5d4245;
+  text-shadow: 2px 0px #3b393b;
+}
+.cookiesContent p {
+  font-size: 18px;
+  font-family: sans-serif;
+  color: #655e5e;
+  line-height: 1.4;
+}
+
+.CookiesBtns {
+  width: 25%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+@media (max-width: 992px) {
+  .CookiesBtns {
+    flex-direction: column;
+    gap: 38px;
+  }
+}
+@media (max-width: 480px) {
+  .CookiesBtns {
+    flex-direction: row;
+    justify-content: center;
+    width: 60%;
+  }
+}
+
+.CookiesBtns button {
+  outline: none;
+  border: 3px solid #976e72;
+  background-color: white;
+  padding: 18px;
+  font-size: 19px;
+  color: #3d3a3c;
+  cursor: pointer;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 992px) {
+  .CookiesBtns button {
+    height: 52px;
+    width: 91px;
+  }
+}
+
+@media (max-width: 480px) {
+  .CookiesBtns button {
+    height: 47px;
+    width: 92px;
+    font-size: 18px;
+  }
+}
+
+/* // */
+.warning {
+  width: 100%;
+  display: none;
+  padding: 47px 50px;
+  position: fixed;
+  z-index: 100;
+  bottom: 0;
+  background: #a13838;
+  font-size: 33px;
+  font-family: sans-serif;
+  color: white;
+  align-items: center;
+  gap: 11px;
+}
+
+@media (max-width: 769px) {
+  .warning {
+    flex-direction: column;
+    text-align: center;
+    gap: 0;
+    font-size: 28px;
+  }
+}
+@media (max-width: 480px) {
+  .warning {
+    font-size: 25px;
+  }
+}
+.showWarinig {
+  display: flex;
+}
+
+.warningSymbol {
+  padding-bottom: 8px;
+}

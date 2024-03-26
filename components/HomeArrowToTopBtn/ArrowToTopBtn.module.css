@@ -1,0 +1,26 @@
+.arrowUp {
+  position: fixed;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width: 40px;
+  outline: none;
+  border: 2px solid var(--color-primary-1);
+  border-radius: 36%;
+  background: var(--color-primary-1);
+  color: var(--color-primary-2);
+  cursor: pointer;
+  font-size: 23px;
+  box-shadow: inset 0px 0px 3px 1px #aa9d9d;
+  right: 10px;
+  bottom: 60px;
+  z-index: 10;
+  transition: 0.3s;
+}
+.arrowUp:hover {
+  transform: scale(1.2);
+}
+.showArrow {
+  display: flex;
+}

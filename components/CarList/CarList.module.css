@@ -1,0 +1,18 @@
+.carList {
+  margin-bottom: 100px;
+}
+
+.carListContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  gap: 100px 20px;
+}
+
+@media (max-width: 769px) {
+  .carListContainer {
+    grid-template-columns: 1fr;
+  }
+}

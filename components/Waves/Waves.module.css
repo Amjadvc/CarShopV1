@@ -1,0 +1,6 @@
+.waves {
+  transform: translate(0px, -1px);
+}
+.wavesShape {
+  fill: #f4f4f4;
+}

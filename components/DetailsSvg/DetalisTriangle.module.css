@@ -1,0 +1,13 @@
+.arrowDownSvg {
+  display: none;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  right: -50%;
+  transform: translate(-50%, -2%);
+}
+@media (max-width: 769px) {
+  .arrowDownSvg {
+    display: block;
+  }
+}

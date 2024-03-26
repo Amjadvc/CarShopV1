@@ -1,0 +1,15 @@
+.stars {
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 769px) {
+  .stars {
+    justify-content: center;
+  }
+}
+
+.stars strong {
+  color: #00000059;
+  font-family: Righteous;
+  margin-left: 10px;
+}

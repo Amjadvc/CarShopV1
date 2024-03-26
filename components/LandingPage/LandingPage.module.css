@@ -1,0 +1,134 @@
+.homeContainr {
+  height: 600px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.content {
+  width: 50%;
+  height: inherit;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.textHeader {
+  font-family: "Righteous", sans-serif;
+  font-weight: 400;
+  font-size: 19px;
+  margin-bottom: 16px;
+}
+.mainText {
+  font-family: "Roboto", sans-serif;
+  font-size: 62px;
+  font-weight: 400;
+  margin-bottom: 28px;
+}
+
+.textFooter {
+  font-family: "Righteous", sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  color: #00000080;
+  margin-bottom: 60px;
+}
+
+.image {
+  display: flex;
+  height: inherit;
+  align-items: center;
+}
+
+.landingCarBg {
+  position: absolute;
+  right: 0;
+  width: 62%;
+}
+
+@media (min-width: 2080px) {
+  .landingCarBg {
+    width: 540px;
+    position: relative;
+  }
+}
+@media (max-width: 1200px) {
+  .textHeader {
+    font-size: 17px;
+    margin-bottom: 9px;
+  }
+  .mainText {
+    font-size: 55px;
+    margin-bottom: 22px;
+  }
+
+  .textFooter {
+    font-size: 16px;
+    margin-bottom: 40px;
+  }
+}
+@media (max-width: 992px) {
+  .textHeader {
+    font-size: 16px;
+  }
+  .mainText {
+    font-size: 46px;
+    margin-bottom: 22px;
+  }
+
+  .textFooter {
+    font-size: 15px;
+    margin-bottom: 40px;
+  }
+
+  .landingCarBg {
+    width: 66%;
+  }
+}
+
+@media (max-width: 769px) {
+  .homeContainr {
+    flex-direction: column;
+  }
+  .content {
+    width: 414px;
+    margin: 26px 0 40px 0;
+    gap: 16px;
+  }
+
+  .landingCarBg {
+    min-width: 699px;
+  }
+}
+@media (max-width: 480px) {
+  .homeContainr {
+    flex-direction: column;
+    height: 100%;
+  }
+  .content {
+    width: 280px;
+    margin: 46px 0 112px 0;
+    gap: 16px;
+  }
+  .textFooter {
+    margin-bottom: 28px;
+  }
+
+  .landingCarBg {
+    min-width: 490px;
+  }
+}
+@media (max-width: 360px) {
+  .content {
+    width: 240px;
+    margin: 8px 0 86px 0;
+    gap: 5px;
+  }
+  .mainText {
+    font-size: 40px;
+    margin-bottom: 22px;
+  }
+  .landingCarBg {
+    min-width: 404px;
+    margin-top: 21px;
+  }
+}

@@ -1,0 +1,10 @@
+@media (max-width: 480px) {
+  .arrowLeft {
+    width: 14px;
+    height: 12px;
+  }
+}
+
+:global(.inner) {
+  fill: var(--color-primary-2);
+}
